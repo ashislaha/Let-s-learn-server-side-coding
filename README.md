@@ -234,3 +234,69 @@ Run it on terminal
 # To stop the server, 
       
       use (control + c) 
+      
+      
+# Host the local service into cloud using heroku:
+
+Use the following steps to host the local service into heroku:
+
+<img width="839" alt="screen shot 2018-06-03 at 9 03 50 am" src="https://user-images.githubusercontent.com/10649284/40883602-d675b818-671e-11e8-8e9f-b6f4b5a3f6c6.png">
+
+	(1). Create a heroku account 
+
+	(2). create an heroku application under your account 
+	     (like: "explore-world", or leave it empty so that heroku provide some name )
+
+	(3). follow the deployment process: install  heroku CLI (command line interface)
+
+	(4). Do login in terminal: $heroku login 
+
+	(5). Verify the versions of node, nom, git: $node - - version, $nom - - version, $git - -  version
+
+	(6). If you have some apps in heroku: check using $heroku apps 
+	     (or Create a new heroku application: $heroku create or step-2)
+
+	(7).  $git init  (initialize the git) 
+	      ( If you are doing on new project, do git clone: $heroku git:clone -a explore-world, as we already have an app, 		       no need to clone it again)
+
+	(8).  check the status: $git status
+
+	(9). Add all the changes: $git add .
+
+	(10). commit all the changed files: $git commit -m “some commit messages”
+
+	(11). Push the code:  git push heroku master (sometimes you need to add git remote if it is not added )
+
+	(12). For debugging: $heroku logs - - tail
+
+	(13). Define a Procfile to say heroku what application to load ( web: node app.js )
+
+	(14). Do one more push to cloud, everything is up. 
+
+	(16). Adding some add-ons like clearDB mysql data-base: $heroku addons:create cleardb:ignite
+
+	(17). Run the config: $heroku config (you will get the clearDB database url )
+
+## clearDB database specifications: 
+
+	CLEARDB_DATABASE_URL: mysql:// b4964d1079f327:8c3f6a93@us-cdbr-iron-east-04.cleardb.net/heroku_178a72b8dd50777?reconnect=true
+
+	User: b4964d1079f327
+	Password: 8c3f6a93
+	Host: us-cdbr-iron-east-04.cleardb.net
+	Database: heroku_178a72b8dd50777
+
+
+<img width="477" alt="screen shot 2018-06-03 at 10 41 43 am" src="https://user-images.githubusercontent.com/10649284/40883600-d1c74908-671e-11e8-82f5-b20a8a6c15d0.png">
+
+<img width="883" alt="screen shot 2018-06-03 at 9 53 53 am" src="https://user-images.githubusercontent.com/10649284/40883601-d407d0e8-671e-11e8-9feb-111de3ce51af.png">
+
+
+## End point:
+
+    https://explore-world.herokuapp.com
+    
+ <img width="468" alt="screen shot 2018-06-03 at 11 13 19 am" src="https://user-images.githubusercontent.com/10649284/40883616-293db672-671f-11e8-98ab-46946a893a3c.png">  
+
+
+
