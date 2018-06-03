@@ -294,7 +294,7 @@ Use the following steps to host the local service into heroku:
 
 ## End point:
 
-    "https://explore-world.herokuapp.com"
+    https://explore-world.herokuapp.com
     
  <img width="468" alt="screen shot 2018-06-03 at 11 13 19 am" src="https://user-images.githubusercontent.com/10649284/40883616-293db672-671f-11e8-98ab-46946a893a3c.png">  
 
