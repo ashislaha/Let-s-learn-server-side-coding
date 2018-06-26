@@ -282,14 +282,12 @@ Use the following steps to host the local service into heroku:
 	CLEARDB_DATABASE_URL: mysql:// b4964d1079f327:8c3f6a93@us-cdbr-iron-east-04.cleardb.net/heroku_178a72b8dd50777?reconnect=true
 
 	User: b4964d1079f327
-	Password: 8c3f6a93
+	Password: XXXXXX
 	Host: us-cdbr-iron-east-04.cleardb.net
 	Database: heroku_178a72b8dd50777
 
 
 <img width="477" alt="screen shot 2018-06-03 at 10 41 43 am" src="https://user-images.githubusercontent.com/10649284/40883600-d1c74908-671e-11e8-82f5-b20a8a6c15d0.png">
-
-<img width="883" alt="screen shot 2018-06-03 at 9 53 53 am" src="https://user-images.githubusercontent.com/10649284/40883601-d407d0e8-671e-11e8-9feb-111de3ce51af.png">
 
 
 ## End point:
